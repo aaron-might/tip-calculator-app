@@ -5,6 +5,11 @@
 
 body {
     background-color: cyan;
+    font-family: 'monospace', Courier, courier;
+}
+.heading-1, .heading-2{
+    font-size:40px;
+    text-align:center;
 }
 
 .main-card {
@@ -21,6 +26,7 @@ body {
 }
 
 .card-1 {
+    
     background-color:hsl(183, 49%, 85%);
     width:50%; 
     height:85%;
@@ -28,31 +34,52 @@ body {
     margin: 20px 10px 20px 30px;
     display:flex;
     flex-flow: row wrap;
-   
+    
 }
-.sub-card-1{
+.sub-card-1, .sub-card-2 {
+    margin: 20px 10px 20px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content:flex-start;
-   
-    
-    
+    align-content:center;
+}
+.title-card-1 h2, .title-card-2 h2{
+    color:hsl(0, 0%, 100%);
+    margin-left:0 auto;
+    font-size:18px;
+}
+.title-card-1 h3, .title-card-2 h3{
+    color:hsl(184, 14%, 56%);
+    font-size:12px;
 }
 
+.tip-amount, .total{
+    font-size:40px;
+    font-weight: 700;
+}
 .card-2 {
     margin: 20px 30px 20px 20px;
     background-color:hsl(81, 90%, 27%);
     width:50%; 
     height:85%;
     border-radius: 12px 12px 12px 12px;
+    
 }
+/* .sub-card-2{
+    margin: 20px 10px 20px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:center; 
+} */
 
-.reset {
+
+.reset-button {
     width:85%;
-    height:25%;
+    height:15%;
     background-color:hsl(185, 41%, 84%);
     cursor:pointer;
+    border-radius: 10px 10px;
 }
 
 .reset:hover {
